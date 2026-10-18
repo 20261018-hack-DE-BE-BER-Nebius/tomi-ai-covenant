@@ -1,0 +1,33 @@
+{
+  "name": "tomi-ai-covenant",
+  "version": "1.0.0",
+  "description": "Tomi OpenClaw gateway with a Rust-only inference boundary",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --import tsx src/server.ts",
+    "start": "node --env-file-if-exists=.env dist/server.js",
+    "build": "tsc",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "openclaw": "npm run build && node scripts/start-openclaw.mjs",
+    "check": "npm run build && npm test && node --check plugins/evidence/index.mjs && node scripts/start-openclaw.mjs --validate",
+    "hooks:install": "git config core.hooksPath .githooks",
+    "start:all": "node --env-file-if-exists=.env scripts/start-all.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "fastify": "5.12.7",
+    "openclaw": "2026.10.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  },
+  "private": true,
+  "overrides": {
+    "npm": "12.2.1"
+  }
+}

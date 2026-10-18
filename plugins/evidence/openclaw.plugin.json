@@ -1,0 +1,20 @@
+{
+  "id": "tomi-evidence",
+  "name": "Tomi source evidence",
+  "description": "Retrieve historical and modern evidence through the authenticated Rust gateway",
+  "categories": [
+    "other"
+  ],
+  "contracts": {
+    "tools": [
+      "tomi_evidence_search"
+    ]
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false
+  }
+}
