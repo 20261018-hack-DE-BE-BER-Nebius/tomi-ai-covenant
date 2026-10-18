@@ -1,0 +1,46 @@
+{
+  "service": "tomi-ai-covenant",
+  "image": "tomireg2610181730.azurecr.io/tomi-ai-covenant:20261018-implementation",
+  "ingress": "private",
+  "target_port": 8084,
+  "health": {
+    "liveness": "/health",
+    "readiness": "/ready"
+  },
+  "recommended_resources": {
+    "cpu": 1,
+    "memory": "2Gi",
+    "max_replicas": 1
+  },
+  "environment": {
+    "TOMI_COVENANT_HOST": "0.0.0.0",
+    "TOMI_COVENANT_PORT": "8084",
+    "TOMI_OPENCLAW_URL": "http://127.0.0.1:18789",
+    "TOMI_OPENCLAW_PORT": "18789",
+    "TOMI_CORE_URL": "Set to the configured core service origin",
+    "TOMI_AGENT_MODEL": "gpt-6-astra",
+    "TOMI_TIMEOUT_MS": "120000",
+    "TOMI_EVIDENCE_TIMEOUT_MS": "60000"
+  },
+  "secret_environment": [
+    "TOMI_COVENANT_TOKEN",
+    "TOMI_OPENCLAW_TOKEN",
+    "TOMI_CORE_TOKEN"
+  ],
+  "secret_requirements": "Distinct gateway and adapter bearer tokens; core bearer must match core internal auth; no provider keys",
+  "writable_paths": [
+    {
+      "path": "/app/runtime",
+      "uid": 1000,
+      "purpose": "Private internal gateway config and SQLite session state; replica-local. Persistent volume needed only if sessions must survive revisions."
+    },
+    {
+      "path": "/app/workspace",
+      "uid": 1000,
+      "purpose": "Empty isolated workspace; bootstrap and context injection disabled"
+    }
+  ],
+  "storage_constraint": "Do not run concurrent gateways against shared SQLite files.",
+  "startup": "CMD node scripts/start-all.mjs starts gateway and adapter; variables may be injected without an image .env file",
+  "shutdown": "SIGTERM forwarded to both children, bounded to ten seconds; local container stop verified"
+}

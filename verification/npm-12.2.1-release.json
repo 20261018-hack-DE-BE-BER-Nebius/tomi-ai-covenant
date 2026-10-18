@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-10-18T16:30:41.126Z",
+  "registry": "https://registry.npmjs.org/npm",
+  "registry_tags": {
+    "latest-1": "1.4.29",
+    "next-3": "3.10.10",
+    "latest-3": "3.10.10",
+    "latest-2": "2.15.12",
+    "next-2": "2.15.12",
+    "next-4": "4.6.1",
+    "latest-4": "4.6.1",
+    "latest-5": "5.10.0",
+    "next-5": "5.10.0",
+    "latest-7": "7.24.2",
+    "next-7": "7.24.2",
+    "next-6": "6.14.18",
+    "v6.14-next": "6.14.18",
+    "latest-6": "6.14.18",
+    "next-8": "8.19.4",
+    "next-9": "9.9.4",
+    "next-10": "10.9.9",
+    "next-12": "12.2.1",
+    "latest": "12.2.0",
+    "next-11": "11.21.1"
+  },
+  "published": "2026-10-15T17:40:08.077Z",
+  "version": "12.2.1",
+  "dist": {
+    "shasum": "2a2765aa5b36f68006ea7132bd3f20b095a85c6e",
+    "tarball": "https://registry.npmjs.org/npm/-/npm-12.2.1.tgz",
+    "fileCount": 1942,
+    "integrity": "sha512-bKCmFRVT/BB+YPEYbZwQ1XUI3N5t4xKSpU1MxOjo7z3iWzKBJ0ZXRC1xFdEN+TC7N5TdywaBzf2dMXGJq/e2PQ==",
+    "signatures": [
+      {
+        "sig": "MEQCIAsXcHTrdTysebaa+LWvu1F6tjSlwyXRr3eG/smzppVnAiApJq1ELms3QE7/aTlQmEt/Yf24Tz5G7sygrUXYS8khng==",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEUCIB++SZIIe5GkkDK2W7U+6Nvp9MXNjpqHUviecw480OMCAiEAnJUNjH2EnEyZgrFQz0nM8A81An7XUuu08GR5KXWHgmo="
+      }
+    ],
+    "unpackedSize": 12430582
+  },
+  "github_release": {
+    "url": "https://github.com/npm/cli/releases/tag/v12.2.1",
+    "tag_name": "v12.2.1",
+    "prerelease": false,
+    "published_at": "2026-10-15T17:46:52Z",
+    "body": "## [12.2.1](https://github.com/npm/cli/compare/v12.2.0...v12.2.1) (2026-10-14)\n### Bug Fixes\n* [`b317f16`](https://github.com/npm/cli/commit/b317f16c80df02ea3628cfa77170d5ae9b59720c) [#9941](https://github.com/npm/cli/pull/9941) write registry allowScripts keys under install-strategy=linked (#9941) (@manzoorwanijk)\n### Dependencies\n* [`7b0c2e8`](https://github.com/npm/cli/commit/7b0c2e8f7fe6dd9f28237d8d50690eb8ebc33743) [#10088](https://github.com/npm/cli/pull/10088) `http-cache-semantics@4.3.0` (@reggi)\n* [`e9e99b4`](https://github.com/npm/cli/commit/e9e99b41b6bc73a0024a820640074a46887bf41a) [#10088](https://github.com/npm/cli/pull/10088) `undici@6.29.0` (@reggi)\n* [`857d7df`](https://github.com/npm/cli/commit/857d7df459d668b6a85eda842457cde667097656) [#10088](https://github.com/npm/cli/pull/10088) `postcss-selector-parser@7.1.6` (@reggi)\n* [`bc7bb3a`](https://github.com/npm/cli/commit/bc7bb3aed84e381893f4e4c4d7e7ccb4f2d1b4d5) [#10088](https://github.com/npm/cli/pull/10088) `ip-address@10.7.2` (@reggi)\n* [`7614360`](https://github.com/npm/cli/commit/761436020d63ee47adeff1aa365a498e917b9ddc) [#10088](https://github.com/npm/cli/pull/10088) `brace-expansion@5.0.12` (@reggi)\n* [workspace](https://github.com/npm/cli/releases/tag/arborist-v10.0.4): `@npmcli/arborist@10.0.4`\n* [workspace](https://github.com/npm/cli/releases/tag/libnpmdiff-v9.0.4): `libnpmdiff@9.0.4`\n* [workspace](https://github.com/npm/cli/releases/tag/libnpmexec-v11.0.4): `libnpmexec@11.0.4`\n* [workspace](https://github.com/npm/cli/releases/tag/libnpmfund-v8.0.4): `libnpmfund@8.0.4`\n* [workspace](https://github.com/npm/cli/releases/tag/libnpmpack-v10.0.4): `libnpmpack@10.0.4`"
+  }
+}

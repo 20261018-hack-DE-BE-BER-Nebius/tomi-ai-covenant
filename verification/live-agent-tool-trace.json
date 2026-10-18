@@ -1,0 +1,74 @@
+{
+  "observed_at": "2026-10-18T16:25:33.805Z",
+  "method": "Read-only SQLite transcript inspection after authenticated live agent call",
+  "session_id": "b6f4d020-6b9a-4815-82b8-4b47c722f087",
+  "run_id": "chatcmpl_93d92fe7-bacc-41fc-a766-9e375a269776",
+  "trace": [
+    {
+      "seq": 5,
+      "role": "assistant",
+      "occurred_at": "2026-10-18T16:23:26.827Z",
+      "model": "gpt-6-astra",
+      "content": [
+        {
+          "type": "toolCall",
+          "id": "call_tB2L3Nk1DxWKQU0jxczhwQsa|fc_02f73c84ebab6220016ad4f27e6e848196838c122714f1abb6",
+          "name": "tomi_evidence_search",
+          "arguments": {
+            "language": "en",
+            "query": "astronomy"
+          }
+        }
+      ]
+    },
+    {
+      "seq": 6,
+      "role": "toolResult",
+      "occurred_at": "2026-10-18T16:23:37.822Z",
+      "tool_name": "tomi_evidence_search",
+      "tool_call_id": "call_tB2L3Nk1DxWKQU0jxczhwQsa|fc_02f73c84ebab6220016ad4f27e6e848196838c122714f1abb6",
+      "is_error": false,
+      "content_length": 16000,
+      "content_sha256": "8654b8b9f40801e744af2ff8049ed5b19ad4e906b5673a6ba954cc20b5def385",
+      "persisted_details": {
+        "persistedDetailsTruncated": true,
+        "originalDetailsBytesAtLeast": 8193,
+        "originalDetailKeys": [
+          "blockers",
+          "candidate_query",
+          "candidates",
+          "challenge_ready",
+          "historical",
+          "locale",
+          "metrics",
+          "question",
+          "retrieval_method",
+          "status",
+          "traces",
+          "uncertainty"
+        ],
+        "status": "partial"
+      },
+      "source_urls": [
+        "https://en.wikipedia.org/w/index.php?oldid=1298337464",
+        "https://en.wikipedia.org/w/index.php?oldid=974317131",
+        "https://en.wikipedia.org/w/index.php?oldid=1346230266",
+        "https://en.wikipedia.org/w/index.php?oldid=1327518763",
+        "https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443"
+      ]
+    },
+    {
+      "seq": 8,
+      "role": "assistant",
+      "occurred_at": "2026-10-18T16:23:43.110Z",
+      "model": "gpt-6-astra",
+      "content": [
+        {
+          "type": "text",
+          "text": "The historical evidence returned was OCR text from [Britannica page 1614](https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443), a **mismatched source** containing entries on thistles, Thomas, and related topics, with only a cross-reference to astronomy rather than an astronomy article.  \nModern evidence included Wikipedia’s [Cultural astronomy](https://en.wikipedia.org/w/index.php?oldid=1298337464), describing how cultures interpret celestial objects, plus [Astronomy education](https://en.wikipedia.org/w/index.php?oldid=1327518763), [Institute of Astronomy](https://en.wikipedia.org/w/index.php?oldid=974317131), and [Astronomy (disambiguation)](https://en.wikipedia.org/w/index.php?oldid=1346230266).  \nRetrieval was partial because the embedding service returned HTTP 503 errors, leaving lexical matching only, so these results do not support a reliable historical-versus-modern comparison of astronomical knowledge.",
+          "textSignature": "{\"v\":1,\"id\":\"msg_0d5f367d87ce8941016ad4f28c0f0481958eb50540a2409b02\",\"phase\":\"final_answer\"}"
+        }
+      ]
+    }
+  ]
+}

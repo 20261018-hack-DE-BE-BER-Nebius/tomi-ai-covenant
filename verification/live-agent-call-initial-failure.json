@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-10-18T16:15:49.601Z",
+  "http_status": 502,
+  "result": {
+    "error": {
+      "message": "OpenClaw gateway could not complete this run",
+      "upstream_status": 502
+    }
+  },
+  "provenance": "Initial actual Chat Completions attempt, preserved from delivery-lane observation of the original live-agent-call.json before the successful Responses run replaced it."
+}

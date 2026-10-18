@@ -1,0 +1,44 @@
+{
+  "observed_at": "2026-10-18T16:36:16.267Z",
+  "method": "Read-only native SQLite inspection after patched-runtime smoke",
+  "npm_version": "12.2.1",
+  "run_id": "chatcmpl_a5a3743b-820f-4c9a-a1b2-0272b04ec743",
+  "session_id": "467e528b-48bd-493a-9ee9-e1532fc801b3",
+  "events": [
+    {
+      "seq": 5,
+      "role": "assistant",
+      "model": "gpt-6-astra",
+      "tool_calls": [
+        {
+          "type": "toolCall",
+          "id": "call_TIbWvS8liv3e0At0oC9szE18|fc_0af2a899883529d5016ad4f46617f88194a54de15908ee2649",
+          "name": "tomi_evidence_search",
+          "arguments": {
+            "language": "en",
+            "query": "astronomy"
+          }
+        }
+      ],
+      "content_sha256": "80534e6be8522a6d300b5a92810bf57dbd03749bb1427ebdb945472c145f4190",
+      "is_error": false
+    },
+    {
+      "seq": 6,
+      "role": "toolResult",
+      "tool_name": "tomi_evidence_search",
+      "tool_call_id": "call_TIbWvS8liv3e0At0oC9szE18|fc_0af2a899883529d5016ad4f46617f88194a54de15908ee2649",
+      "tool_calls": [],
+      "content_sha256": "2932e0e751c5df4650dca0a85ed2a8df4311bbb9dbfcbeca02c5e431a173b7b6",
+      "is_error": false
+    },
+    {
+      "seq": 8,
+      "role": "assistant",
+      "model": "gpt-6-astra",
+      "tool_calls": [],
+      "content_sha256": "51445bdf9bc1e70dc872f43875e5e9f4fd93d4bfbb538824fee1e2c5e15648ff",
+      "is_error": false
+    }
+  ]
+}

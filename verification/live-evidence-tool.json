@@ -1,0 +1,316 @@
+{
+  "observed_at": "2026-10-18T16:14:19.279Z",
+  "http_status": 200,
+  "result": {
+    "ok": true,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"trust\":\"untrusted_source_data\",\"evidence\":{\"blockers\":[\"v1/embeddings: HTTP 503\"],\"candidate_query\":\"astronomy\",\"candidates\":[{\"acquired_at\":\"2026-10-18T16:14:12.302320+00:00\",\"corpus\":\"wikipedia\",\"dataset_revision\":\"417c267bb457fa645c22eb3b5c77764963194c70\",\"document_id\":\"wikipedia:14609061\",\"license\":\"CC-BY-SA-4.0; Wikipedia contributors\",\"parse_status\":\"parsed\",\"parser_receipt_sha256\":\"\",\"revision_id\":\"1298337464\",\"score\":null,\"score_type\":\"unranked_lexical_candidate\",\"source_kind\":\"prose\",\"source_url\":\"https://en.wikipedia.org/w/index.php?oldid=1298337464\",\"text\":\"Cultural astronomy, sometimes called the study of Astronomy in Culture, has been described as investigating \\\"the diversity of ways in which cultures, both ancient and modern, perceive celestial objects and integrate them into their view of the world.\\\" As such, it encompasses the interdisciplinary fields studying the astronomies of current or ancient societies and cultures. It developed from the two interdisciplinary fields of archaeoastronomy, the study of the use of astronomy and its role in ancient cultures and civilizations, and ethnoastronomy, \\\"a closely allied research field which merges astronomy, textual scholarship, ethnology, and the interpretation of ancient iconography for the purpose of reconstructing lifeways, astronomical techniques, and rituals.\\\" Cultural astronomy is also related to historical astronomy (analyzing historical astronomical data), history of astronomy (understanding and study and evolution of the discipline of astronomy over the course of human knowledge) and history of astrology (investigating relationships between astrology and astronomy).\\n\\nResearch on cultural astronomy may be published in the Journal of Astronomy in Culture, which was established in 2016 by the International Society for Archaeoastronomy and Astronomy in Culture (ISAAC).\\n\\nAncient Greek astronomy\\n\\nAstronomy in the medieval Islamic world\\n\\nAustralian Aboriginal astronomy\\n\\nBabylonian astronomy\\n\\nChinese astronomy\\n\\nEgyptian astronomy\\n\\nHebrew astronomy\\n\\nIndian astronomy\\n\\nMaya astronomy\\n\\nInuit astronomy\\n\\nPersian astronomy\\n\\nSerbian folk astronomy\\n\\nTibetan astronomy\\n\\nNakh peoples#Cosmology_and_creation\",\"text_sha256\":\"3f888abd2d0e5ae0f33574b8da309d3aa9ccec5015dad7dd95267a9a639b63e9\",\"title\":\"Cultural astronomy\"},{\"acquired_at\":\"2026-10-18T16:14:12.855367+00:00\",\"corpus\":\"wikipedia\",\"dataset_revision\":\"417c267bb457fa645c22eb3b5c77764963194c70\",\"document_id\":\"wikipedia:1516852\",\"license\":\"CC-BY-SA-4.0; Wikipedia contributors\",\"parse_status\":\"parsed\",\"parser_receipt_sha256\":\"\",\"revision_id\":\"974317131\",\"score\":null,\"score_type\":\"unranked_lexical_candidate\",\"source_kind\":\"prose\",\"source_url\":\"https://en.wikipedia.org/w/index.php?oldid=974317131\",\"text\":\"Institute of Astronomy or Institute for Astronomy may refer to:\\n\\nInstitute of Astronomy, Cambridge, England\\n\\nInstitute of Astronomy of the Bulgarian Academy of Sciences, Sofia, Bulgaria\\n\\nInstitute of Astronomy, National Central University, Jhongli, Taiwan\\n\\nInstitute of Astronomy, NCU, Toruń, Poland\\n\\nInstitute of Astronomy of the Russian Academy of Sciences, Moscow, Russia\\n\\nInstitute for Astronomy (Hawaii), Honolulu, Hawaii, United States\\n\\nInstitute for Astronomy, School of Physics and Astronomy, University of Edinburgh, Scotland\\n\\nInstitute for Astronomy, Astrophysics, Space Applications and Remote Sensing, Mount Penteli, Greece\\n\\nInstitute for Astronomy and Astrophysics, Brussels, Belgium\\n\\nAcademia Sinica Institute of Astronomy and Astrophysics, Taipei, Taiwan\\n\\nDunlap Institute for Astronomy & Astrophysics, Toronto, Canada\\n\\nMax Planck Institute for Astronomy, Heidelberg, Baden-Württemberg, Germany\",\"text_sha256\":\"4be9a5ab5b5e6ddc0116c63091ef2146c0a2def1548487767d0803d40b66c5ae\",\"title\":\"Institute of Astronomy\"},{\"acquired_at\":\"2026-10-18T16:14:13.419667+00:00\",\"corpus\":\"wikipedia\",\"dataset_revision\":\"417c267bb457fa645c22eb3b5c77764963194c70\",\"document_id\":\"wikipedia:5081125\",\"license\":\"CC-BY-SA-4.0; Wikipedia contributors\",\"parse_status\":\"parsed\",\"parser_receipt_sha256\":\"\",\"revision_id\":\"1346230266\",\"score\":null,\"score_type\":\"unranked_lexical_candidate\",\"source_kind\":\"prose\",\"source_url\":\"https://en.wikipedia.org/w/index.php?oldid=1346230266\",\"text\":\"Astronomy is a science that studies celestial objects and the cosmos.\\n\\nAstronomy may also refer to:\\n\\nAstronomy (Bleach album), 2003\\n\\nAstronomy (Dragonland album), 2006\\n\\n\\\"Astronomy\\\" (song), a 1974 song by Blue Öyster Cult\\n\\n\\\"Astronomy\\\" (Conan Gray song), 2022\\n\\nAstronomy (journal), a Swiss academic journal\\n\\nAstronomy (magazine), an American magazine\\n\\n\\\"Astronomy\\\", an episode of the television series QI\",\"text_sha256\":\"0121831540ad3a0ed944d864f266e7674621f4b8f7b068e643cc97d31d232520\",\"title\":\"Astronomy (disambiguation)\"},{\"acquired_at\":\"2026-10-18T16:14:13.974138+00:00\",\"corpus\":\"wikipedia\",\"dataset_revision\":\"417c267bb457fa645c22eb3b5c77764963194c70\",\"document_id\":\"wikipedia:49292744\",\"license\":\"CC-BY-SA-4.0; Wikipedia contributors\",\"parse_status\":\"parsed\",\"parser_receipt_sha256\":\"\",\"revision_id\":\"1327518763\",\"score\":null,\"score_type\":\"unranked_lexical_candidate\",\"source_kind\":\"prose\",\"source_url\":\"https://en.wikipedia.org/w/index.php?oldid=1327518763\",\"text\":\"Astronomy education or astronomy education research (AER) refers both to the methods currently used to teach the science of astronomy and to an area of discipline-based education research that seeks to improve those methods. Specifically, AER includes systematic techniques honed in science and physics education to understand what and how students learn about astronomy and determine how teachers can create more effective learning environments.\\n\\nEducation is important to astronomy as it impacts both the recruitment of future astronomers and the appreciation of astronomy by citizens and politicians who support astronomical research. Astronomy has been taught throughout much of recorded human history, and has practical application in timekeeping and navigation. Teaching astronomy contributes to an understanding of physics and the origin of the world around us, a shared cultural background, and a sense of wonder and exploration. It includes education of the general public through planetariums, books, and instructive presentations, plus programs and tools for amateur astronomy, and University-level degree programs for professional astronomers. Astronomy organizations provide educational functions and societies in about 100 nation states around the world.\\n\\nIn schools, particularly at the collegiate level, astronomy is aligned with physics and the two are often combined to form a Department of Physics and Astronomy. Some parts of astronomy education overlap with physics education, however, astronomy education has its own arenas, practitioners, journals, and research. This can be demonstrated in the identified 20-year lag between the emergence of AER and physics education research. The body of research in this field are available through electronic sources such as the Searchable Annotated Bibliography of Education Research (SABER) and the American Astronomical Society 's database of the contents of their journal \\\"Astronomy Education Review\\\" (see link below).\\n\\nThe National Aeronautics and Space Administration (NASA) has also created a Center for Astronomy Education, a program designed to support the professional development of astronomy instructors through the NASA JPL Exoplanet Exploration Public Engagement Program and the Spitzer Education and Outreach Program.\",\"text_sha256\":\"15abbc4221cc0fe8f19bbf27d38aff12608cf970a276d684c3978fe8e23f156b\",\"title\":\"Astronomy education\"}],\"challenge_ready\":false,\"historical\":{\"acquired_at\":\"2026-10-18T15:56:51.346462+00:00\",\"corpus\":\"britannica\",\"dataset_revision\":\"309f765b1ecc83e0a7f7762e44b4a927a7555443\",\"document_id\":\"britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1614\",\"license\":\"CC0-1.0; National Library of Scotland\",\"parse_status\":\"parsed\",\"parser_receipt_sha256\":\"8be92468a5b2277899209f17e603fd24f08a7ada6229b06ffbaa1965389e984c\",\"revision_id\":\"309f765b1ecc83e0a7f7762e44b4a927a7555443\",\"source_kind\":\"prose\",\"source_url\":\"https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443\",\"text\":\"<x_0.2627><y_0.0219>T H O ( 896 )<x_0.584><y_0.0414><class_Page-header>\\n\\n<x_0.71><y_0.0211>T HO<x_0.8076><y_0.0422><class_Picture>\\n\\n<x_0.1182><y_0.0445>hire, situated on the river Swade, fixtures miles north- of Yor. It leads two members in parlament<x_0.5146><y_0.0734><class_Text>\\n\\n<x_0.5156><y_0.0727>THIRSTI, an overall definition, parlament a deficiency in the false to moetles the inward parts of the mouth; hence arise after Hong before for think : it is a lymptom generally attending benefit afforded.<x_0.5273><y_0.1273><class_Text>\\n\\n<x_0.1016><y_0.1266>THISTLE, in botany. See Carousus.<x_0.3965><y_0.1422><class_Text>\\n\\n<x_0.1025><y_0.143>_Order of Life_ THISTES, or of BX Anakaw, a military order of neighborhood in Scotland, the rife and infiltration whereof is variously related by different authors. Leley, bilbp of Roofs, reports, that the girls below the battle between Chichling king of Northumberland, and Humpes king of the Pilots, a bright crois, in form of that whercen on St Andrew (the under false is Scotland) fafferent majority appears to the Hunges; who being grand the victory, ever after bore the figure of that crois on his baners. Others affer, that Auchana King of Scotland ifn influenced the orders, after having any of the famous league offensive and defensive with Charlemagae king of France. But although he still had been acknowledged as the Jhnol of the kingdom of Sozbank from the reign of Achaiu, yet fome refer the beginning of this order to Charles VII, of France. Others place the foundation of as far as the year z too.<x_0.5195><y_0.3711><class_Text>\\n\\n<x_0.1191><y_0.3727>The chief and principal edge is a gold collar compo- feel fullfills and griping of me indicated with amules of golf, having freedom thereto the image of St Andrew with his crois, and the motto, NMO THE IMPUNE LA CITY.<x_0.5205><y_0.4391><class_Text>\\n\\n<x_0.1201><y_0.4406>The ordinary or common origin worn by the knights, is a flat of four River points, and over them a green circled, borders and offered through pink, containing the find motto, and in the camera is a thilfe proper, all which is embroidered on their left breastf, and womb with the collay, with a great method over the shoulder, and brought under the right arm i pender thereto is the iimage of St Andrew, with his crois, in a purple robe, within an oral of gold canamelled very, with the former motto - but femonettes they were, existed in the June manner, a hittle crowned.<x_0.5186><y_0.5891><class_Text>\\n\\n<x_0.1211><y_0.5898>Also, the time of the reformation, this order was dropped, till James II: of England refumed it, by creating eight knights I however, the resolution unifedit is again, and are why neglected the mena Anne, no 2023, reduced to the primitive delges of twelve knights of St Andrews.<x_0.5176><y_0.6703><class_Text>\\n\\n<x_0.1221><y_0.6695>THILSPH, in botany, a genus of the térdrynania filicul lofa clais. The pod is emarginated, heart-shaped, containing many feeds. There are ten species, for of them native of Britain, etc. the compoffre, or mihrskate; the arveffe, or treated-mullard is the perfeitaum, or perisholate treated-muillard, the fratum, or perennial multithread-muillard; the monuments, or nonnumeral nulliridate-muillard; and the burfa palforta, or thepherd's ports.<x_0.5166><y_0.7922><class_Text>\\n\\n<x_0.123><y_0.7914>THONF.ANS, ThOMSTS, or Chiffistur of St Thomas, a people of the Ealt-Infer, who, according to the tradious received the Gorgeel for St Thomas. Upon the arrival of the Portuguese at Calising, in her first marriage to the Indier, they met with ancient Chiffans, who pre tended to be defended from shale covered by StThomas. \\\"The Thomas’s being informed is a new people arrived a momg them, who bore a particular veneration for the<x_0.5215><y_0.9031><class_Text>\\n\\n<x_0.542><y_0.0453>crois, fet entheaffors to them, to make an alliance with them, and to fulfill their affiliates against the Granite prince, by whom they were greatly profitable. A mixture of opinions, with a total interruption of pallors, femonsines for travel years together, occasional that horrible chain that religion was in at the interval of the Portuguese; for a specimen whereof we shall add their names of celebration the exclusion. Over their altar was a kind of gallery, and while the pristine living being beginning of the office below, a cake of floor of rice was trying to oil, or butter, above , when enough, the cake was let down in a bullet upon the slary, where target conferred it: as to the other few pieces, for wine they died a kind of body or struck, various prepared in that country. Now their ordination much more regular; the archdeacon, who was fomentes more repled than the baby handful, frequently obtained prices their other album went enntric. The Portuguese, for thefe two latl centuries, have laboured the reforma tion of the church, and have employed both the ecolela fific and leaching them better; for this end they have called the Thomas bibops to the council at Goa, have inherited, charged them, for even for them for induction on Portugal and Rome? He finding that they were fill apt to relale at their return, and that no good was like to be done with them, they refused to exclude them once for all, and, and to spoon in European bibings in their room. These proceedings have rendered the Portuguese familyely close to the Thomas.<x_0.9453><y_0.4383><class_Text>\\n\\n<x_0.54><y_0.4398>St THOMAS, a city of the father India, on the coaft of Commodeld, three miles south of Port St George; fub ject to the Portuguese.<x_0.9443><y_0.4789><class_Text>\\n\\n<x_0.5391><y_0.4797>St Thomas is also an illand in the Atlantic ocean, fituated under the equator, in 8°E. long.<x_0.9424><y_0.5086><class_Text>\\n\\n<x_0.5381><y_0.5078>St Thomas is all a town of Guiana, in South America, flattened on the river Oromoky, foljetoft Spain.<x_0.9434><y_0.5336><class_Text>\\n\\n<x_0.5371><y_0.5344>St. Thomas’s Day, a felfval of the Christian church, offered on Dec. 21, in commemoration of St Thomas the profile.<x_0.9414><y_0.5648><class_Text>\\n\\n<x_0.5361><y_0.5656>St Thomas y of Cantesterpil, by a feffral of the Domlin, church, observed on Dec. 22, in memory of Thomas Becker archbishop of Canteterboy, who was murdered, or, as the Romanilla fay, martyred, in the reign of king Henry II.<x_0.9404><y_0.643><class_Text>\\n\\n<x_0.5352><y_0.6438>THOMISM, the doctrine of St Thomas Aquinat, and his followers the Thomas, clearly with regard to predellination and grace. There is some doubts what the true ge mine thomlim is, but there are authors who diflingwith the thomall of St Thomas from that of the dominicians. Other agents make themomin so more than a kind of inni-fenim olugted: bat janfenim, it is known, has been condemned by the repys, which give thomlim never was: in effect, the writings of diverse Lesencés, who were appointed by their order to lay down and defend, before the baby five, the depunts of their School, have face been reported the role of pure thomlim.<x_0.9395><y_0.8047><class_Text>\\n\\n<x_0.5342><y_0.8039>THOMISTS, a feet of school-driven, who maintain thom- in, and the preceding article.<x_0.9385><y_0.8336><class_Text>\\n\\n<x_0.5332><y_0.8328>THEORACIC Dc ctr. See Astronomy, p. 282.<x_0.8672><y_0.8477><class_Text>\\n\\n<x_0.5322><y_0.8469>THORAX, in anatomy. See Anatomy, p. 277.<x_0.8682><y_0.8602><class_Text>\\n\\n<x_0.5312><y_0.8594>THONN. a city of Poland, in the province of regal Praflix, illustrated on the river Villula e. E. long. 19\\\", and N. lat.<x_0.9463><y_0.8945><class_Text>\\n\\n<x_0.8662><y_0.8969>THORN<x_0.9414><y_0.9133><class_Page-footer>\",\"text_sha256\":\"67d44ea4e5d1e55f37793f0c2576783e51abefe3d8b19de76b1a07757ae5d12f\",\"title\":\"Britannica page 1614\"},\"locale\":\"en\",\"metrics\":{\"historical_top_words\":[[\"the\",98],[\"of\",66],[\"a\",30],[\"and\",26],[\"in\",25],[\"to\",21],[\"is\",17],[\"st\",15],[\"thomas\",15],[\"for\",13],[\"or\",12],[\"with\",12],[\"on\",10],[\"that\",10],[\"them\",10]],\"historical_words\":1099,\"interpretation\":\"Lexical differences alone do not establish a change in factual knowledge.\",\"jensen_shannon_divergence\":0.6646850702053826,\"modern_top_words\":[[\"astronomy\",25],[\"the\",15],[\"of\",15],[\"and\",14],[\"in\",8],[\"ancient\",5],[\"cultural\",3],[\"study\",3],[\"culture\",3],[\"which\",3],[\"cultures\",3],[\"as\",2],[\"investigating\",2],[\"world\",2],[\"it\",2]],\"modern_words\":216,\"vocabulary_jaccard\":0.04791344667697063},\"question\":\"Astronomy\",\"retrieval_method\":\"lexical_bm25\",\"status\":\"partial\",\"traces\":[{\"duration_ms\":3027,\"error\":\"v1/embeddings: HTTP 503\",\"occurred_at\":\"2026-10-18T16:14:11.554601+00:00\",\"status\":\"failed\",\"tool\":\"nemotron.embed.query\"},{\"duration_ms\":164,\"occurred_at\":\"2026-10-18T16:14:11.759841+00:00\",\"status\":\"completed\",\"tool\":\"wikipedia.search\"},{\"duration_ms\":542,\"occurred_at\":\"2026-10-18T16:14:12.302369+00:00\",\"status\":\"completed\",\"tool\":\"wikipedia.article\"},{\"duration_ms\":532,\"occurred_at\":\"2026-10-18T16:14:12.855448+00:00\",\"status\":\"completed\",\"tool\":\"wikipedia.article\"},{\"duration_ms\":543,\"occurred_at\":\"2026-10-18T16:14:13.419692+00:00\",\"status\":\"completed\",\"tool\":\"wikipedia.article\"},{\"duration_ms\":543,\"occurred_at\":\"2026-10-18T16:14:13.974191+00:00\",\"status\":\"completed\",\"tool\":\"wikipedia.article\"},{\"duration_ms\":589,\"occurred_at\":\"2026-10-18T16:14:14.583575+00:00\",\"status\":\"completed\",\"tool\":\"wikipedia.article\"},{\"duration_ms\":535,\"occurred_at\":\"2026-10-18T16:14:15.131046+00:00\",\"status\":\"completed\",\"tool\":\"wikipedia.article\"},{\"duration_ms\":540,\"occurred_at\":\"2026-10-18T16:14:15.691572+00:00\",\"status\":\"completed\",\"tool\":\"wikipedia.article\"},{\"duration_ms\":535,\"occurred_at\":\"2026-10-18T16:14:16.237502+00:00\",\"status\":\"completed\",\"tool\":\"wikipedia.article\"},{\"duration_ms\":3016,\"error\":\"v1/embeddings: HTTP 503\",\"occurred_at\":\"2026-10-18T16:14:19.263667+00:00\",\"status\":\"failed\",\"tool\":\"nemotron.embed.document\"}],\"uncertainty\":[\"Historical page selected by lexical overlap; semantic selection unavailable.\",\"Lexical baseline only: Nemotron semantic matching has not completed.\"]}}"
+        }
+      ],
+      "details": {
+        "blockers": [
+          "v1/embeddings: HTTP 503"
+        ],
+        "candidate_query": "astronomy",
+        "candidates": [
+          {
+            "acquired_at": "2026-10-18T16:14:12.302320+00:00",
+            "corpus": "wikipedia",
+            "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+            "document_id": "wikipedia:14609061",
+            "license": "CC-BY-SA-4.0; Wikipedia contributors",
+            "parse_status": "parsed",
+            "parser_receipt_sha256": "",
+            "revision_id": "1298337464",
+            "score": null,
+            "score_type": "unranked_lexical_candidate",
+            "source_kind": "prose",
+            "source_url": "https://en.wikipedia.org/w/index.php?oldid=1298337464",
+            "text": "Cultural astronomy, sometimes called the study of Astronomy in Culture, has been described as investigating \"the diversity of ways in which cultures, both ancient and modern, perceive celestial objects and integrate them into their view of the world.\" As such, it encompasses the interdisciplinary fields studying the astronomies of current or ancient societies and cultures. It developed from the two interdisciplinary fields of archaeoastronomy, the study of the use of astronomy and its role in ancient cultures and civilizations, and ethnoastronomy, \"a closely allied research field which merges astronomy, textual scholarship, ethnology, and the interpretation of ancient iconography for the purpose of reconstructing lifeways, astronomical techniques, and rituals.\" Cultural astronomy is also related to historical astronomy (analyzing historical astronomical data), history of astronomy (understanding and study and evolution of the discipline of astronomy over the course of human knowledge) and history of astrology (investigating relationships between astrology and astronomy).\n\nResearch on cultural astronomy may be published in the Journal of Astronomy in Culture, which was established in 2016 by the International Society for Archaeoastronomy and Astronomy in Culture (ISAAC).\n\nAncient Greek astronomy\n\nAstronomy in the medieval Islamic world\n\nAustralian Aboriginal astronomy\n\nBabylonian astronomy\n\nChinese astronomy\n\nEgyptian astronomy\n\nHebrew astronomy\n\nIndian astronomy\n\nMaya astronomy\n\nInuit astronomy\n\nPersian astronomy\n\nSerbian folk astronomy\n\nTibetan astronomy\n\nNakh peoples#Cosmology_and_creation",
+            "text_sha256": "3f888abd2d0e5ae0f33574b8da309d3aa9ccec5015dad7dd95267a9a639b63e9",
+            "title": "Cultural astronomy"
+          },
+          {
+            "acquired_at": "2026-10-18T16:14:12.855367+00:00",
+            "corpus": "wikipedia",
+            "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+            "document_id": "wikipedia:1516852",
+            "license": "CC-BY-SA-4.0; Wikipedia contributors",
+            "parse_status": "parsed",
+            "parser_receipt_sha256": "",
+            "revision_id": "974317131",
+            "score": null,
+            "score_type": "unranked_lexical_candidate",
+            "source_kind": "prose",
+            "source_url": "https://en.wikipedia.org/w/index.php?oldid=974317131",
+            "text": "Institute of Astronomy or Institute for Astronomy may refer to:\n\nInstitute of Astronomy, Cambridge, England\n\nInstitute of Astronomy of the Bulgarian Academy of Sciences, Sofia, Bulgaria\n\nInstitute of Astronomy, National Central University, Jhongli, Taiwan\n\nInstitute of Astronomy, NCU, Toruń, Poland\n\nInstitute of Astronomy of the Russian Academy of Sciences, Moscow, Russia\n\nInstitute for Astronomy (Hawaii), Honolulu, Hawaii, United States\n\nInstitute for Astronomy, School of Physics and Astronomy, University of Edinburgh, Scotland\n\nInstitute for Astronomy, Astrophysics, Space Applications and Remote Sensing, Mount Penteli, Greece\n\nInstitute for Astronomy and Astrophysics, Brussels, Belgium\n\nAcademia Sinica Institute of Astronomy and Astrophysics, Taipei, Taiwan\n\nDunlap Institute for Astronomy & Astrophysics, Toronto, Canada\n\nMax Planck Institute for Astronomy, Heidelberg, Baden-Württemberg, Germany",
+            "text_sha256": "4be9a5ab5b5e6ddc0116c63091ef2146c0a2def1548487767d0803d40b66c5ae",
+            "title": "Institute of Astronomy"
+          },
+          {
+            "acquired_at": "2026-10-18T16:14:13.419667+00:00",
+            "corpus": "wikipedia",
+            "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+            "document_id": "wikipedia:5081125",
+            "license": "CC-BY-SA-4.0; Wikipedia contributors",
+            "parse_status": "parsed",
+            "parser_receipt_sha256": "",
+            "revision_id": "1346230266",
+            "score": null,
+            "score_type": "unranked_lexical_candidate",
+            "source_kind": "prose",
+            "source_url": "https://en.wikipedia.org/w/index.php?oldid=1346230266",
+            "text": "Astronomy is a science that studies celestial objects and the cosmos.\n\nAstronomy may also refer to:\n\nAstronomy (Bleach album), 2003\n\nAstronomy (Dragonland album), 2006\n\n\"Astronomy\" (song), a 1974 song by Blue Öyster Cult\n\n\"Astronomy\" (Conan Gray song), 2022\n\nAstronomy (journal), a Swiss academic journal\n\nAstronomy (magazine), an American magazine\n\n\"Astronomy\", an episode of the television series QI",
+            "text_sha256": "0121831540ad3a0ed944d864f266e7674621f4b8f7b068e643cc97d31d232520",
+            "title": "Astronomy (disambiguation)"
+          },
+          {
+            "acquired_at": "2026-10-18T16:14:13.974138+00:00",
+            "corpus": "wikipedia",
+            "dataset_revision": "417c267bb457fa645c22eb3b5c77764963194c70",
+            "document_id": "wikipedia:49292744",
+            "license": "CC-BY-SA-4.0; Wikipedia contributors",
+            "parse_status": "parsed",
+            "parser_receipt_sha256": "",
+            "revision_id": "1327518763",
+            "score": null,
+            "score_type": "unranked_lexical_candidate",
+            "source_kind": "prose",
+            "source_url": "https://en.wikipedia.org/w/index.php?oldid=1327518763",
+            "text": "Astronomy education or astronomy education research (AER) refers both to the methods currently used to teach the science of astronomy and to an area of discipline-based education research that seeks to improve those methods. Specifically, AER includes systematic techniques honed in science and physics education to understand what and how students learn about astronomy and determine how teachers can create more effective learning environments.\n\nEducation is important to astronomy as it impacts both the recruitment of future astronomers and the appreciation of astronomy by citizens and politicians who support astronomical research. Astronomy has been taught throughout much of recorded human history, and has practical application in timekeeping and navigation. Teaching astronomy contributes to an understanding of physics and the origin of the world around us, a shared cultural background, and a sense of wonder and exploration. It includes education of the general public through planetariums, books, and instructive presentations, plus programs and tools for amateur astronomy, and University-level degree programs for professional astronomers. Astronomy organizations provide educational functions and societies in about 100 nation states around the world.\n\nIn schools, particularly at the collegiate level, astronomy is aligned with physics and the two are often combined to form a Department of Physics and Astronomy. Some parts of astronomy education overlap with physics education, however, astronomy education has its own arenas, practitioners, journals, and research. This can be demonstrated in the identified 20-year lag between the emergence of AER and physics education research. The body of research in this field are available through electronic sources such as the Searchable Annotated Bibliography of Education Research (SABER) and the American Astronomical Society 's database of the contents of their journal \"Astronomy Education Review\" (see link below).\n\nThe National Aeronautics and Space Administration (NASA) has also created a Center for Astronomy Education, a program designed to support the professional development of astronomy instructors through the NASA JPL Exoplanet Exploration Public Engagement Program and the Spitzer Education and Outreach Program.",
+            "text_sha256": "15abbc4221cc0fe8f19bbf27d38aff12608cf970a276d684c3978fe8e23f156b",
+            "title": "Astronomy education"
+          }
+        ],
+        "challenge_ready": false,
+        "historical": {
+          "acquired_at": "2026-10-18T15:56:51.346462+00:00",
+          "corpus": "britannica",
+          "dataset_revision": "309f765b1ecc83e0a7f7762e44b4a927a7555443",
+          "document_id": "britannica:309f765b1ecc83e0a7f7762e44b4a927a7555443:train:1614",
+          "license": "CC0-1.0; National Library of Scotland",
+          "parse_status": "parsed",
+          "parser_receipt_sha256": "8be92468a5b2277899209f17e603fd24f08a7ada6229b06ffbaa1965389e984c",
+          "revision_id": "309f765b1ecc83e0a7f7762e44b4a927a7555443",
+          "source_kind": "prose",
+          "source_url": "https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443",
+          "text": "<x_0.2627><y_0.0219>T H O ( 896 )<x_0.584><y_0.0414><class_Page-header>\n\n<x_0.71><y_0.0211>T HO<x_0.8076><y_0.0422><class_Picture>\n\n<x_0.1182><y_0.0445>hire, situated on the river Swade, fixtures miles north- of Yor. It leads two members in parlament<x_0.5146><y_0.0734><class_Text>\n\n<x_0.5156><y_0.0727>THIRSTI, an overall definition, parlament a deficiency in the false to moetles the inward parts of the mouth; hence arise after Hong before for think : it is a lymptom generally attending benefit afforded.<x_0.5273><y_0.1273><class_Text>\n\n<x_0.1016><y_0.1266>THISTLE, in botany. See Carousus.<x_0.3965><y_0.1422><class_Text>\n\n<x_0.1025><y_0.143>_Order of Life_ THISTES, or of BX Anakaw, a military order of neighborhood in Scotland, the rife and infiltration whereof is variously related by different authors. Leley, bilbp of Roofs, reports, that the girls below the battle between Chichling king of Northumberland, and Humpes king of the Pilots, a bright crois, in form of that whercen on St Andrew (the under false is Scotland) fafferent majority appears to the Hunges; who being grand the victory, ever after bore the figure of that crois on his baners. Others affer, that Auchana King of Scotland ifn influenced the orders, after having any of the famous league offensive and defensive with Charlemagae king of France. But although he still had been acknowledged as the Jhnol of the kingdom of Sozbank from the reign of Achaiu, yet fome refer the beginning of this order to Charles VII, of France. Others place the foundation of as far as the year z too.<x_0.5195><y_0.3711><class_Text>\n\n<x_0.1191><y_0.3727>The chief and principal edge is a gold collar compo- feel fullfills and griping of me indicated with amules of golf, having freedom thereto the image of St Andrew with his crois, and the motto, NMO THE IMPUNE LA CITY.<x_0.5205><y_0.4391><class_Text>\n\n<x_0.1201><y_0.4406>The ordinary or common origin worn by the knights, is a flat of four River points, and over them a green circled, borders and offered through pink, containing the find motto, and in the camera is a thilfe proper, all which is embroidered on their left breastf, and womb with the collay, with a great method over the shoulder, and brought under the right arm i pender thereto is the iimage of St Andrew, with his crois, in a purple robe, within an oral of gold canamelled very, with the former motto - but femonettes they were, existed in the June manner, a hittle crowned.<x_0.5186><y_0.5891><class_Text>\n\n<x_0.1211><y_0.5898>Also, the time of the reformation, this order was dropped, till James II: of England refumed it, by creating eight knights I however, the resolution unifedit is again, and are why neglected the mena Anne, no 2023, reduced to the primitive delges of twelve knights of St Andrews.<x_0.5176><y_0.6703><class_Text>\n\n<x_0.1221><y_0.6695>THILSPH, in botany, a genus of the térdrynania filicul lofa clais. The pod is emarginated, heart-shaped, containing many feeds. There are ten species, for of them native of Britain, etc. the compoffre, or mihrskate; the arveffe, or treated-mullard is the perfeitaum, or perisholate treated-muillard, the fratum, or perennial multithread-muillard; the monuments, or nonnumeral nulliridate-muillard; and the burfa palforta, or thepherd's ports.<x_0.5166><y_0.7922><class_Text>\n\n<x_0.123><y_0.7914>THONF.ANS, ThOMSTS, or Chiffistur of St Thomas, a people of the Ealt-Infer, who, according to the tradious received the Gorgeel for St Thomas. Upon the arrival of the Portuguese at Calising, in her first marriage to the Indier, they met with ancient Chiffans, who pre tended to be defended from shale covered by StThomas. \"The Thomas’s being informed is a new people arrived a momg them, who bore a particular veneration for the<x_0.5215><y_0.9031><class_Text>\n\n<x_0.542><y_0.0453>crois, fet entheaffors to them, to make an alliance with them, and to fulfill their affiliates against the Granite prince, by whom they were greatly profitable. A mixture of opinions, with a total interruption of pallors, femonsines for travel years together, occasional that horrible chain that religion was in at the interval of the Portuguese; for a specimen whereof we shall add their names of celebration the exclusion. Over their altar was a kind of gallery, and while the pristine living being beginning of the office below, a cake of floor of rice was trying to oil, or butter, above , when enough, the cake was let down in a bullet upon the slary, where target conferred it: as to the other few pieces, for wine they died a kind of body or struck, various prepared in that country. Now their ordination much more regular; the archdeacon, who was fomentes more repled than the baby handful, frequently obtained prices their other album went enntric. The Portuguese, for thefe two latl centuries, have laboured the reforma tion of the church, and have employed both the ecolela fific and leaching them better; for this end they have called the Thomas bibops to the council at Goa, have inherited, charged them, for even for them for induction on Portugal and Rome? He finding that they were fill apt to relale at their return, and that no good was like to be done with them, they refused to exclude them once for all, and, and to spoon in European bibings in their room. These proceedings have rendered the Portuguese familyely close to the Thomas.<x_0.9453><y_0.4383><class_Text>\n\n<x_0.54><y_0.4398>St THOMAS, a city of the father India, on the coaft of Commodeld, three miles south of Port St George; fub ject to the Portuguese.<x_0.9443><y_0.4789><class_Text>\n\n<x_0.5391><y_0.4797>St Thomas is also an illand in the Atlantic ocean, fituated under the equator, in 8°E. long.<x_0.9424><y_0.5086><class_Text>\n\n<x_0.5381><y_0.5078>St Thomas is all a town of Guiana, in South America, flattened on the river Oromoky, foljetoft Spain.<x_0.9434><y_0.5336><class_Text>\n\n<x_0.5371><y_0.5344>St. Thomas’s Day, a felfval of the Christian church, offered on Dec. 21, in commemoration of St Thomas the profile.<x_0.9414><y_0.5648><class_Text>\n\n<x_0.5361><y_0.5656>St Thomas y of Cantesterpil, by a feffral of the Domlin, church, observed on Dec. 22, in memory of Thomas Becker archbishop of Canteterboy, who was murdered, or, as the Romanilla fay, martyred, in the reign of king Henry II.<x_0.9404><y_0.643><class_Text>\n\n<x_0.5352><y_0.6438>THOMISM, the doctrine of St Thomas Aquinat, and his followers the Thomas, clearly with regard to predellination and grace. There is some doubts what the true ge mine thomlim is, but there are authors who diflingwith the thomall of St Thomas from that of the dominicians. Other agents make themomin so more than a kind of inni-fenim olugted: bat janfenim, it is known, has been condemned by the repys, which give thomlim never was: in effect, the writings of diverse Lesencés, who were appointed by their order to lay down and defend, before the baby five, the depunts of their School, have face been reported the role of pure thomlim.<x_0.9395><y_0.8047><class_Text>\n\n<x_0.5342><y_0.8039>THOMISTS, a feet of school-driven, who maintain thom- in, and the preceding article.<x_0.9385><y_0.8336><class_Text>\n\n<x_0.5332><y_0.8328>THEORACIC Dc ctr. See Astronomy, p. 282.<x_0.8672><y_0.8477><class_Text>\n\n<x_0.5322><y_0.8469>THORAX, in anatomy. See Anatomy, p. 277.<x_0.8682><y_0.8602><class_Text>\n\n<x_0.5312><y_0.8594>THONN. a city of Poland, in the province of regal Praflix, illustrated on the river Villula e. E. long. 19\", and N. lat.<x_0.9463><y_0.8945><class_Text>\n\n<x_0.8662><y_0.8969>THORN<x_0.9414><y_0.9133><class_Page-footer>",
+          "text_sha256": "67d44ea4e5d1e55f37793f0c2576783e51abefe3d8b19de76b1a07757ae5d12f",
+          "title": "Britannica page 1614"
+        },
+        "locale": "en",
+        "metrics": {
+          "historical_top_words": [
+            [
+              "the",
+              98
+            ],
+            [
+              "of",
+              66
+            ],
+            [
+              "a",
+              30
+            ],
+            [
+              "and",
+              26
+            ],
+            [
+              "in",
+              25
+            ],
+            [
+              "to",
+              21
+            ],
+            [
+              "is",
+              17
+            ],
+            [
+              "st",
+              15
+            ],
+            [
+              "thomas",
+              15
+            ],
+            [
+              "for",
+              13
+            ],
+            [
+              "or",
+              12
+            ],
+            [
+              "with",
+              12
+            ],
+            [
+              "on",
+              10
+            ],
+            [
+              "that",
+              10
+            ],
+            [
+              "them",
+              10
+            ]
+          ],
+          "historical_words": 1099,
+          "interpretation": "Lexical differences alone do not establish a change in factual knowledge.",
+          "jensen_shannon_divergence": 0.6646850702053826,
+          "modern_top_words": [
+            [
+              "astronomy",
+              25
+            ],
+            [
+              "the",
+              15
+            ],
+            [
+              "of",
+              15
+            ],
+            [
+              "and",
+              14
+            ],
+            [
+              "in",
+              8
+            ],
+            [
+              "ancient",
+              5
+            ],
+            [
+              "cultural",
+              3
+            ],
+            [
+              "study",
+              3
+            ],
+            [
+              "culture",
+              3
+            ],
+            [
+              "which",
+              3
+            ],
+            [
+              "cultures",
+              3
+            ],
+            [
+              "as",
+              2
+            ],
+            [
+              "investigating",
+              2
+            ],
+            [
+              "world",
+              2
+            ],
+            [
+              "it",
+              2
+            ]
+          ],
+          "modern_words": 216,
+          "vocabulary_jaccard": 0.04791344667697063
+        },
+        "question": "Astronomy",
+        "retrieval_method": "lexical_bm25",
+        "status": "partial",
+        "traces": [
+          {
+            "duration_ms": 3027,
+            "error": "v1/embeddings: HTTP 503",
+            "occurred_at": "2026-10-18T16:14:11.554601+00:00",
+            "status": "failed",
+            "tool": "nemotron.embed.query"
+          },
+          {
+            "duration_ms": 164,
+            "occurred_at": "2026-10-18T16:14:11.759841+00:00",
+            "status": "completed",
+            "tool": "wikipedia.search"
+          },
+          {
+            "duration_ms": 542,
+            "occurred_at": "2026-10-18T16:14:12.302369+00:00",
+            "status": "completed",
+            "tool": "wikipedia.article"
+          },
+          {
+            "duration_ms": 532,
+            "occurred_at": "2026-10-18T16:14:12.855448+00:00",
+            "status": "completed",
+            "tool": "wikipedia.article"
+          },
+          {
+            "duration_ms": 543,
+            "occurred_at": "2026-10-18T16:14:13.419692+00:00",
+            "status": "completed",
+            "tool": "wikipedia.article"
+          },
+          {
+            "duration_ms": 543,
+            "occurred_at": "2026-10-18T16:14:13.974191+00:00",
+            "status": "completed",
+            "tool": "wikipedia.article"
+          },
+          {
+            "duration_ms": 589,
+            "occurred_at": "2026-10-18T16:14:14.583575+00:00",
+            "status": "completed",
+            "tool": "wikipedia.article"
+          },
+          {
+            "duration_ms": 535,
+            "occurred_at": "2026-10-18T16:14:15.131046+00:00",
+            "status": "completed",
+            "tool": "wikipedia.article"
+          },
+          {
+            "duration_ms": 540,
+            "occurred_at": "2026-10-18T16:14:15.691572+00:00",
+            "status": "completed",
+            "tool": "wikipedia.article"
+          },
+          {
+            "duration_ms": 535,
+            "occurred_at": "2026-10-18T16:14:16.237502+00:00",
+            "status": "completed",
+            "tool": "wikipedia.article"
+          },
+          {
+            "duration_ms": 3016,
+            "error": "v1/embeddings: HTTP 503",
+            "occurred_at": "2026-10-18T16:14:19.263667+00:00",
+            "status": "failed",
+            "tool": "nemotron.embed.document"
+          }
+        ],
+        "uncertainty": [
+          "Historical page selected by lexical overlap; semantic selection unavailable.",
+          "Lexical baseline only: Nemotron semantic matching has not completed."
+        ]
+      }
+    }
+  }
+}

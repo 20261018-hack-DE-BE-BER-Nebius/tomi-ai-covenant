@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-18T16:23:43.216Z",
+  "http_status": 200,
+  "result": {
+    "id": "chatcmpl_93d92fe7-bacc-41fc-a766-9e375a269776",
+    "object": "chat.completion",
+    "created": 1792340603,
+    "model": "openclaw:main",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The historical evidence returned was OCR text from [Britannica page 1614](https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443), a **mismatched source** containing entries on thistles, Thomas, and related topics, with only a cross-reference to astronomy rather than an astronomy article.  \nModern evidence included Wikipedia’s [Cultural astronomy](https://en.wikipedia.org/w/index.php?oldid=1298337464), describing how cultures interpret celestial objects, plus [Astronomy education](https://en.wikipedia.org/w/index.php?oldid=1327518763), [Institute of Astronomy](https://en.wikipedia.org/w/index.php?oldid=974317131), and [Astronomy (disambiguation)](https://en.wikipedia.org/w/index.php?oldid=1346230266).  \nRetrieval was partial because the embedding service returned HTTP 503 errors, leaving lexical matching only, so these results do not support a reliable historical-versus-modern comparison of astronomical knowledge."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2131,
+      "completion_tokens": 275,
+      "total_tokens": 9104,
+      "prompt_tokens_details": {
+        "cached_tokens": 2125
+      }
+    }
+  }
+}

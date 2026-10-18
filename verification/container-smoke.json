@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-10-18T16:33:10Z",
+  "platform": "linux/arm64",
+  "image": "tomi-ai-covenant:20261018-implementation",
+  "health_status": 200,
+  "runtime_check": "{\"uid\":1000,\"host_env_file_present\":false,\"npm\":\"12.2.1\"}",
+  "runtime_check_exit": 0,
+  "provider_inference": "not attempted in container; native patched-runtime live agent separately verified",
+  "stop_exit_code": 0,
+  "stop_elapsed_seconds": 0.72
+}

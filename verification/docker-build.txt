@@ -1,0 +1,127 @@
+#1 [resolver] fetching image...docker.io/library/node:24.22.0-bookworm-slim
+#1 DONE 0.0s
+
+#2 [resolver] fetching image...docker.io/library/node:24.22.0-bookworm-slim
+#2 DONE 0.0s
+
+#3 [internal] load build definition from Dockerfile
+#3 transferring dockerfile:
+#3 transferring dockerfile: 881B 3.7s done
+#3 DONE 3.7s
+
+#4 [internal] load .dockerignore
+#4 transferring context:
+#4 transferring context: 134B 3.0s done
+#4 DONE 3.1s
+
+#5 oci-layout://docker.io/library/node:24.22.0-bookworm-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5
+#5 resolve docker.io/library/node:24.22.0-bookworm-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5 0.1s done
+#5 ...
+
+#6 [internal] load build context
+#6 transferring context: 277.40kB 3.1s done
+#6 DONE 3.1s
+
+#5 oci-layout://docker.io/library/node:24.22.0-bookworm-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5
+#5 sha256:f3b7fa076fe63b12118c87ec7c84133db790c4942081273fd6f71f91598d297d 3.31kB / 3.31kB 0.0s done
+#5 sha256:66095d3064d1b18399d076b3b93108d12a0f352ade634c55c11fc1770d14dd5d 448B / 448B 0.0s done
+#5 sha256:f8951e871b2569bbd90a0461aadc9526beb7da501769f25e02a0c921ed819c80 1.71MB / 1.71MB 0.0s done
+#5 sha256:0c847615531065f69ea6ddc554bb40067455e42aa9274e29bf1245dc03140888 8.39MB / 51.02MB 0.2s
+#5 sha256:0c847615531065f69ea6ddc554bb40067455e42aa9274e29bf1245dc03140888 22.02MB / 51.02MB 0.3s
+#5 sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 9.44MB / 28.14MB 0.2s
+#5 sha256:0c847615531065f69ea6ddc554bb40067455e42aa9274e29bf1245dc03140888 37.75MB / 51.02MB 0.5s
+#5 sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 28.14MB / 28.14MB 0.3s done
+#5 extracting sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6
+#5 sha256:0c847615531065f69ea6ddc554bb40067455e42aa9274e29bf1245dc03140888 45.09MB / 51.02MB 0.6s
+#5 sha256:0c847615531065f69ea6ddc554bb40067455e42aa9274e29bf1245dc03140888 51.02MB / 51.02MB 0.7s done
+#5 extracting sha256:c75f989a229d12b2d2613a5997de9ff3546f664c22da9248720033a2410220f6 0.5s done
+#5 DONE 4.1s
+
+#5 oci-layout://docker.io/library/node:24.22.0-bookworm-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5
+#5 extracting sha256:f3b7fa076fe63b12118c87ec7c84133db790c4942081273fd6f71f91598d297d done
+#5 extracting sha256:0c847615531065f69ea6ddc554bb40067455e42aa9274e29bf1245dc03140888
+#5 extracting sha256:0c847615531065f69ea6ddc554bb40067455e42aa9274e29bf1245dc03140888 0.6s done
+#5 DONE 4.7s
+
+#5 oci-layout://docker.io/library/node:24.22.0-bookworm-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5
+#5 extracting sha256:f8951e871b2569bbd90a0461aadc9526beb7da501769f25e02a0c921ed819c80 0.0s done
+#5 extracting sha256:66095d3064d1b18399d076b3b93108d12a0f352ade634c55c11fc1770d14dd5d done
+#5 DONE 4.7s
+
+#7 [linux/arm64 dependencies 1/4] WORKDIR /app
+#7 DONE 0.2s
+
+#8 [linux/arm64 dependencies 2/4] COPY package.json package-lock.json ./
+#8 DONE 0.0s
+
+#9 [linux/arm64 dependencies 3/4] RUN npm ci --ignore-scripts
+#9 7.267 npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+#9 11.07
+#9 11.07 added 384 packages, and audited 535 packages in 11s
+#9 11.07
+#9 11.07 126 packages are looking for funding
+#9 11.07   run `npm fund` for details
+#9 11.07
+#9 11.07 found 0 vulnerabilities
+#9 11.07 npm notice
+#9 11.07 npm notice New major version of npm available! 11.19.1 -> 12.2.0
+#9 11.07 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+#9 11.07 npm notice To update run: npm install -g npm@12.2.0
+#9 11.07 npm notice
+#9 DONE 11.2s
+
+#10 [linux/arm64 build 1/3] COPY tsconfig.json ./
+#10 DONE 0.1s
+
+#11 [linux/arm64 build 2/3] COPY src ./src
+#11 DONE 0.0s
+
+#12 [linux/arm64 build 3/3] RUN npm run build
+#12 0.077
+#12 0.077 > tomi-ai-covenant@1.0.0 build
+#12 0.077 > tsc
+#12 0.077
+#12 DONE 0.8s
+
+#13 [linux/arm64 verified 1/2] RUN npm prune --omit=dev --ignore-scripts
+#13 0.802
+#13 0.802 removed 2 packages, and audited 533 packages in 740ms
+#13 0.803
+#13 0.803 126 packages are looking for funding
+#13 0.803   run `npm fund` for details
+#13 0.805
+#13 0.805 found 0 vulnerabilities
+#13 DONE 0.8s
+
+#14 [linux/arm64 verified 2/2] RUN npm audit --omit=dev --audit-level=moderate
+#14 0.638 found 0 vulnerabilities
+#14 DONE 0.7s
+
+#15 [linux/arm64 runtime 2/8] COPY --from=verified --chown=node:node /app/node_modules ./node_modules
+#15 DONE 2.7s
+
+#16 [linux/arm64 runtime 3/8] COPY --from=verified --chown=node:node /app/dist ./dist
+#16 DONE 0.2s
+
+#17 [linux/arm64 runtime 4/8] COPY --chown=node:node package.json ./
+#17 DONE 0.0s
+
+#18 [linux/arm64 runtime 5/8] COPY --chown=node:node plugins ./plugins
+#18 DONE 0.0s
+
+#19 [linux/arm64 runtime 6/8] COPY --chown=node:node scripts ./scripts
+#19 DONE 0.0s
+
+#20 [linux/arm64 runtime 7/8] RUN mkdir runtime workspace && chown node:node runtime workspace
+#20 DONE 0.0s
+
+#21 exporting to oci image format
+#21 exporting layers
+#21 exporting layers 11.8s done
+#21 exporting manifest sha256:8cb361f7822fa1ed5c94c6b6f6dccc103270dfb0ccd6de73ebdfb25a30931ae5 done
+#21 exporting config sha256:05e45677f24d217490d18a2870caded1010c4f9e131f9382d0587535092adbfa done
+#21 exporting manifest list sha256:523b7dee6bc5731b2f5277561ab1a5c78e2e667e2d5a018a4ae4c1628c763944 done
+#21 sending tarball
+#21 sending tarball 1.5s done
+#21 DONE 13.3s
+tomi-ai-covenant:20261018-implementation

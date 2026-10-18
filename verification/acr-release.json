@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-10-18T16:35:40.758859+00:00",
+  "registry": "tomireg2610181730.azurecr.io",
+  "image": "tomireg2610181730.azurecr.io/tomi-ai-covenant:20261018-implementation",
+  "run": {
+    "finishTime": "2026-10-18T16:35:05.994805+00:00",
+    "outputImages": [
+      {
+        "digest": "sha256:58ea04256eb804277c88a4e779ffc2ce30b7de52bdc0a8efb40623badd7f3b44",
+        "registry": "tomireg2610181730.azurecr.io",
+        "repository": "tomi-ai-covenant",
+        "tag": "20261018-implementation"
+      }
+    ],
+    "platform": {
+      "architecture": "amd64",
+      "os": "linux",
+      "variant": null
+    },
+    "runId": "dtd",
+    "status": "Succeeded"
+  },
+  "verified_tag": {
+    "createdTime": "2026-10-18T16:35:01.4822588Z",
+    "digest": "sha256:58ea04256eb804277c88a4e779ffc2ce30b7de52bdc0a8efb40623badd7f3b44",
+    "lastUpdateTime": "2026-10-18T16:35:01.4822588Z"
+  }
+}

@@ -1,0 +1,138 @@
+#1 [resolver] fetching image...docker.io/library/node:24.22.0-bookworm-slim
+#1 DONE 0.0s
+
+#2 [resolver] fetching image...docker.io/library/node:24.22.0-bookworm-slim
+#2 DONE 0.0s
+
+#3 [internal] load build definition from Dockerfile
+#3 transferring dockerfile:
+#3 transferring dockerfile: 881B 3.3s done
+#3 DONE 3.3s
+
+#4 [internal] load .dockerignore
+#4 transferring context:
+#4 transferring context: 134B 3.1s done
+#4 DONE 3.1s
+
+#5 oci-layout://docker.io/library/node:24.22.0-bookworm-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5
+#5 resolve docker.io/library/node:24.22.0-bookworm-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5 0.0s done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 273.31kB 3.1s done
+#6 DONE 3.1s
+
+#7 [linux/arm64 dependencies 1/4] WORKDIR /app
+#7 CACHED
+
+#8 [linux/arm64 dependencies 2/4] COPY package.json package-lock.json ./
+#8 DONE 0.0s
+
+#9 [linux/arm64 dependencies 3/4] RUN npm ci --ignore-scripts
+#9 8.973 npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+#9 13.59
+#9 13.59 added 384 packages, and audited 535 packages in 14s
+#9 13.59
+#9 13.59 126 packages are looking for funding
+#9 13.59   run `npm fund` for details
+#9 13.60
+#9 13.60 5 vulnerabilities (2 moderate, 3 high)
+#9 13.60
+#9 13.60 To address all issues, run:
+#9 13.60   npm audit fix
+#9 13.60
+#9 13.60 Run `npm audit` for details.
+#9 13.60 npm notice
+#9 13.60 npm notice New major version of npm available! 11.19.1 -> 12.2.0
+#9 13.60 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+#9 13.60 npm notice To update run: npm install -g npm@12.2.0
+#9 13.60 npm notice
+#9 DONE 13.8s
+
+#10 [linux/arm64 build 1/3] COPY tsconfig.json ./
+#10 DONE 0.1s
+
+#11 [linux/arm64 build 2/3] COPY src ./src
+#11 DONE 0.0s
+
+#12 [linux/arm64 build 3/3] RUN npm run build
+#12 0.085
+#12 0.085 > tomi-ai-covenant@1.0.0 build
+#12 0.085 > tsc
+#12 0.085
+#12 DONE 1.0s
+
+#13 [linux/arm64 verified 1/2] RUN npm prune --omit=dev --ignore-scripts
+#13 0.979
+#13 0.979 removed 2 packages, and audited 533 packages in 919ms
+#13 0.979
+#13 0.979 126 packages are looking for funding
+#13 0.979   run `npm fund` for details
+#13 0.984
+#13 0.984 5 vulnerabilities (2 moderate, 3 high)
+#13 0.984
+#13 0.984 To address all issues, run:
+#13 0.984   npm audit fix
+#13 0.984
+#13 0.984 Run `npm audit` for details.
+#13 DONE 1.0s
+
+#14 [linux/arm64 verified 2/2] RUN npm audit --omit=dev --audit-level=moderate
+#14 0.856 # npm audit report
+#14 0.856
+#14 0.856 brace-expansion  4.0.0 - 5.0.11
+#14 0.856 Severity: high
+#14 0.856 brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service - https://github.com/advisories/GHSA-q2hr-2g5m-vwhr
+#14 0.856 brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion - https://github.com/advisories/GHSA-qhr7-859c-m2p7
+#14 0.856 brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion - https://github.com/advisories/GHSA-6j4f-fj2g-mc7p
+#14 0.856 fix available via `npm audit fix`
+#14 0.856 node_modules/npm/node_modules/brace-expansion
+#14 0.856
+#14 0.856 http-cache-semantics  <=4.2.0
+#14 0.856 Severity: high
+#14 0.856 http-cache-semantics max-stale handling can disclose cross-user cached responses - https://github.com/advisories/GHSA-ch52-4w7c-c8xp
+#14 0.856 fix available via `npm audit fix`
+#14 0.856 node_modules/npm/node_modules/http-cache-semantics
+#14 0.856
+#14 0.856 ip-address  <=10.7.0
+#14 0.856 Severity: moderate
+#14 0.856 ip-address: Address6.isLinkLocal() recognizes fe80::/64 rather than fe80::/10, allowing SSRF and trust-boundary bypass to on-link hosts - https://github.com/advisories/GHSA-rpw4-54j3-4h4q
+#14 0.856 ip-address: no classifier recognizes the NAT64 local-use range 64:ff9b:1::/48, allowing SSRF and trust-boundary bypass - https://github.com/advisories/GHSA-2vr4-cq9g-pvrc
+#14 0.856 ip-address: isInSubnet() and isHostInSubnet() compare addresses of different families as if they shared an address space, allowing an allowlist check to admit an address outside its range - https://github.com/advisories/GHSA-j6r3-76f7-8jcv
+#14 0.856 ip-address: Address6 builds a parse diagnostic proportional to the input with no length bound, allowing a single long string to stall or crash the process - https://github.com/advisories/GHSA-h3mg-xc3c-68pw
+#14 0.856 fix available via `npm audit fix`
+#14 0.856 node_modules/npm/node_modules/ip-address
+#14 0.856
+#14 0.856 postcss-selector-parser  <7.1.6
+#14 0.856 Severity: moderate
+#14 0.856 PostCSS: Quadratic complexity in flat selector parsing allows CPU exhaustion - https://github.com/advisories/GHSA-rj75-hqrm-r3gf
+#14 0.856 fix available via `npm audit fix`
+#14 0.856 node_modules/npm/node_modules/postcss-selector-parser
+#14 0.856
+#14 0.856 undici  <=6.28.0
+#14 0.856 Severity: high
+#14 0.856 undici vulnerable to Denial of Service via unhandled error in WebSocket permessage-deflate decompression - https://github.com/advisories/GHSA-3wwx-pv8p-q78v
+#14 0.856 undici vulnerable to downstream response splitting via retry interceptor - https://github.com/advisories/GHSA-r53p-7pc4-xj5r
+#14 0.856 undici vulnerable to Denial of Service via unrequested WebSocket subprotocol - https://github.com/advisories/GHSA-rfgv-xxqx-mfg5
+#14 0.856 fix available via `npm audit fix`
+#14 0.856 node_modules/npm/node_modules/undici
+#14 0.856
+#14 0.856 5 vulnerabilities (2 moderate, 3 high)
+#14 0.856
+#14 0.856 To address all issues, run:
+#14 0.856   npm audit fix
+#14 ERROR: process "/bin/sh -c npm audit --omit=dev --audit-level=moderate" did not complete successfully: exit code: 1
+------
+ > [linux/arm64 verified 2/2] RUN npm audit --omit=dev --audit-level=moderate:
+0.856 undici vulnerable to Denial of Service via unhandled error in WebSocket permessage-deflate decompression - https://github.com/advisories/GHSA-3wwx-pv8p-q78v
+0.856 undici vulnerable to downstream response splitting via retry interceptor - https://github.com/advisories/GHSA-r53p-7pc4-xj5r
+0.856 undici vulnerable to Denial of Service via unrequested WebSocket subprotocol - https://github.com/advisories/GHSA-rfgv-xxqx-mfg5
+0.856 fix available via `npm audit fix`
+0.856 node_modules/npm/node_modules/undici
+0.856
+0.856 5 vulnerabilities (2 moderate, 3 high)
+0.856
+0.856 To address all issues, run:
+0.856   npm audit fix
+------
+Error: unknown: "failed to solve: process "/bin/sh -c npm audit --omit=dev --audit-level=moderate" did not complete successfully: exit code: 1"

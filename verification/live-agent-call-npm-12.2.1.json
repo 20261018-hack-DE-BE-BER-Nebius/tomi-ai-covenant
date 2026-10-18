@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-10-18T16:31:49.802Z",
+  "npm_version": "12.2.1",
+  "http_status": 200,
+  "result": {
+    "id": "chatcmpl_a5a3743b-820f-4c9a-a1b2-0272b04ec743",
+    "object": "chat.completion",
+    "created": 1792341090,
+    "model": "openclaw:main",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The search returned Wikipedia’s [Cultural astronomy](https://en.wikipedia.org/w/index.php?oldid=1298337464), [Institute of Astronomy](https://en.wikipedia.org/w/index.php?oldid=974317131), [Astronomy (disambiguation)](https://en.wikipedia.org/w/index.php?oldid=1346230266), and [Astronomy education](https://en.wikipedia.org/w/index.php?oldid=1327518763), plus [historical Britannica page 1614](https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443).  \nThe historical page was mismatched—mostly “THO” entries rather than astronomy—and retrieval was partial: query and document embedding stages failed with HTTP 503, leaving lexical matching only."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2138,
+      "completion_tokens": 228,
+      "total_tokens": 9071,
+      "prompt_tokens_details": {
+        "cached_tokens": 2132
+      }
+    }
+  }
+}

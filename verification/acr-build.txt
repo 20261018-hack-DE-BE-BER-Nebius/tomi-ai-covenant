@@ -1,0 +1,194 @@
+WARNING: Packing source code into tar to upload...
+WARNING: Excluding '.gitignore' based on default ignore rules
+WARNING: Excluding '.git' based on default ignore rules
+WARNING: Uploading archived source code from '/var/folders/zb/6yrhsssj3tg5647b8fyhjs800000gn/T/build_archive_a77e8125b0214831896eb3f918cf32b1.tar.gz'...
+WARNING: Sending context (68.028 KiB) to registry: tomireg2610181730...
+WARNING: Queued a build with ID: dtd
+WARNING: Waiting for an agent...
+2026/10/18 16:33:04 Downloading source code...
+2026/10/18 16:33:05 Finished downloading source code
+2026/10/18 16:33:05 Using acb_vol_f80ccb53-ed70-444d-ba42-b4759b64966e as the home volume
+2026/10/18 16:33:05 Setting up Docker configuration...
+2026/10/18 16:33:06 Successfully set up Docker configuration
+2026/10/18 16:33:06 Logging in to registry: tomireg2610181730.azurecr.io
+2026/10/18 16:33:07 Successfully logged into tomireg2610181730.azurecr.io
+2026/10/18 16:33:07 Executing step ID: build. Timeout(sec): 28800, Working directory: '', Network: ''
+2026/10/18 16:33:07 Scanning for dependencies...
+2026/10/18 16:33:07 Successfully scanned dependencies
+2026/10/18 16:33:07 Launching container with name: build
+Sending build context to Docker daemon  311.8kB
+Step 1/22 : FROM node:24.22.0-bookworm-slim AS dependencies
+24.22.0-bookworm-slim: Pulling from library/node
+7fd1ebe418b5: Pulling fs layer
+fb7da8a11632: Pulling fs layer
+b9a701dba9fb: Pulling fs layer
+182ecac4702d: Pulling fs layer
+4cec569cef03: Pulling fs layer
+182ecac4702d: Waiting
+4cec569cef03: Waiting
+fb7da8a11632: Verifying Checksum
+fb7da8a11632: Download complete
+7fd1ebe418b5: Verifying Checksum
+7fd1ebe418b5: Download complete
+b9a701dba9fb: Verifying Checksum
+b9a701dba9fb: Download complete
+182ecac4702d: Verifying Checksum
+182ecac4702d: Download complete
+4cec569cef03: Verifying Checksum
+4cec569cef03: Download complete
+7fd1ebe418b5: Pull complete
+fb7da8a11632: Pull complete
+b9a701dba9fb: Pull complete
+182ecac4702d: Pull complete
+4cec569cef03: Pull complete
+Digest: sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5
+Status: Downloaded newer image for node:24.22.0-bookworm-slim
+ ---> a797d6440ed0
+Step 2/22 : WORKDIR /app
+ ---> Running in 7e3e50d60219
+Removing intermediate container 7e3e50d60219
+ ---> 624bc1f72769
+Step 3/22 : COPY package.json package-lock.json ./
+ ---> 26cf78494061
+Step 4/22 : RUN npm ci --ignore-scripts
+ ---> Running in 11ea0bba0107
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+
+added 384 packages, and audited 535 packages in 19s
+
+126 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice
+npm notice New major version of npm available! 11.19.1 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+Removing intermediate container 11ea0bba0107
+ ---> b07c2e1e8629
+Step 5/22 : FROM dependencies AS build
+ ---> b07c2e1e8629
+Step 6/22 : COPY tsconfig.json ./
+ ---> b6f2004ffa8a
+Step 7/22 : COPY src ./src
+ ---> f3ee9923f6ec
+Step 8/22 : RUN npm run build
+ ---> Running in 0cd269af49a6
+
+> tomi-ai-covenant@1.0.0 build
+> tsc
+
+Removing intermediate container 0cd269af49a6
+ ---> 898db1844b81
+Step 9/22 : FROM build AS verified
+ ---> 898db1844b81
+Step 10/22 : RUN npm prune --omit=dev --ignore-scripts
+ ---> Running in a0fa07d1b2a5
+
+removed 2 packages, and audited 533 packages in 899ms
+
+126 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Removing intermediate container a0fa07d1b2a5
+ ---> 837d2a8d95fb
+Step 11/22 : RUN npm audit --omit=dev --audit-level=moderate
+ ---> Running in b9a32465a21d
+found 0 vulnerabilities
+Removing intermediate container b9a32465a21d
+ ---> 9f451358800b
+Step 12/22 : FROM node:24.22.0-bookworm-slim AS runtime
+24.22.0-bookworm-slim: Pulling from library/node
+Digest: sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5
+Status: Image is up to date for node:24.22.0-bookworm-slim
+ ---> a797d6440ed0
+Step 13/22 : WORKDIR /app
+ ---> Using cache
+ ---> 624bc1f72769
+Step 14/22 : ENV NODE_ENV=production
+ ---> Running in c642e5063875
+Removing intermediate container c642e5063875
+ ---> 94757999d911
+Step 15/22 : COPY --from=verified --chown=node:node /app/node_modules ./node_modules
+
+ ---> edef81dde64d
+Step 16/22 : COPY --from=verified --chown=node:node /app/dist ./dist
+ ---> 1a382564fef9
+Step 17/22 : COPY --chown=node:node package.json ./
+ ---> f32b275f0f5e
+Step 18/22 : COPY --chown=node:node plugins ./plugins
+ ---> e3f3cecf159f
+Step 19/22 : COPY --chown=node:node scripts ./scripts
+ ---> b8f0a07600f6
+Step 20/22 : RUN mkdir runtime workspace && chown node:node runtime workspace
+ ---> Running in 7949445c4390
+Removing intermediate container 7949445c4390
+ ---> 512dfa9636c2
+Step 21/22 : USER node
+ ---> Running in 8046ae1e294b
+Removing intermediate container 8046ae1e294b
+ ---> ff8f3254c13b
+Step 22/22 : CMD ["node", "scripts/start-all.mjs"]
+ ---> Running in fd2128ad308e
+Removing intermediate container fd2128ad308e
+ ---> b7eb0f2fa640
+Successfully built b7eb0f2fa640
+Successfully tagged tomireg2610181730.azurecr.io/tomi-ai-covenant:20261018-implementation
+2026/10/18 16:34:33 Successfully executed container: build
+2026/10/18 16:34:33 Executing step ID: push. Timeout(sec): 3600, Working directory: '', Network: ''
+2026/10/18 16:34:33 Pushing image: tomireg2610181730.azurecr.io/tomi-ai-covenant:20261018-implementation, attempt 1
+The push refers to repository [tomireg2610181730.azurecr.io/tomi-ai-covenant]
+c9566944f71d: Preparing
+ae0c1a723d55: Preparing
+7ae0de71b29f: Preparing
+25782670f2c1: Preparing
+db7a0698fdfc: Preparing
+500f4964e4a5: Preparing
+d3033144e60d: Preparing
+48d457b4d425: Preparing
+992664ed2944: Preparing
+85065cc72b0d: Preparing
+91329da0c497: Preparing
+e58989146fce: Preparing
+500f4964e4a5: Waiting
+d3033144e60d: Waiting
+48d457b4d425: Waiting
+992664ed2944: Waiting
+85065cc72b0d: Waiting
+91329da0c497: Waiting
+db7a0698fdfc: Pushed
+ae0c1a723d55: Pushed
+c9566944f71d: Pushed
+7ae0de71b29f: Pushed
+25782670f2c1: Pushed
+d3033144e60d: Pushed
+992664ed2944: Pushed
+48d457b4d425: Pushed
+91329da0c497: Pushed
+85065cc72b0d: Pushed
+e58989146fce: Pushed
+500f4964e4a5: Pushed
+20261018-implementation: digest: sha256:58ea04256eb804277c88a4e779ffc2ce30b7de52bdc0a8efb40623badd7f3b44 size: 2823
+2026/10/18 16:35:01 Successfully pushed image: tomireg2610181730.azurecr.io/tomi-ai-covenant:20261018-implementation
+2026/10/18 16:35:01 Step ID: build marked as successful (elapsed time in seconds: 85.975122)
+2026/10/18 16:35:01 Populating digests for step ID: build...
+2026/10/18 16:35:02 Successfully populated digests for step ID: build
+2026/10/18 16:35:02 Step ID: push marked as successful (elapsed time in seconds: 28.418158)
+2026/10/18 16:35:02 The following dependencies were found:
+2026/10/18 16:35:02
+- image:
+    registry: tomireg2610181730.azurecr.io
+    repository: tomi-ai-covenant
+    tag: 20261018-implementation
+    digest: sha256:58ea04256eb804277c88a4e779ffc2ce30b7de52bdc0a8efb40623badd7f3b44
+  runtime-dependency:
+    registry: registry.hub.docker.com
+    repository: library/node
+    tag: 24.22.0-bookworm-slim
+    digest: sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5
+  git: {}
+
+
+Run ID: dtd was successful after 1m59s

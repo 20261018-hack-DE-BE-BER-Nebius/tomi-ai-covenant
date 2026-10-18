@@ -1,0 +1,103 @@
+{
+  "observed_at": "2026-10-18T16:46:44.642Z",
+  "completed_at": "2026-10-18T16:47:28.181Z",
+  "scope": "Actual private Azure Container Apps replica; token read from process.env without disclosure",
+  "revision": "tomi-ai-covenant--sr3m8fv",
+  "replica": "tomi-ai-covenant--sr3m8fv-68cbf47585-85pkg",
+  "npm_version": "12.2.1",
+  "http_status": 200,
+  "result": {
+    "id": "chatcmpl_cc2c76bc-23d2-40b3-8ac5-ffd8c1a09b2b",
+    "object": "chat.completion",
+    "created": 1792342005,
+    "model": "openclaw:main",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "The historical source returned was [“Britannica page 1614” in the National Library of Scotland dataset](https://huggingface.co/datasets/NationalLibraryOfScotland/encyclopaedia_britannica_illustrated/tree/309f765b1ecc83e0a7f7762e44b4a927a7555443), an OCR page of “THO” entries—not an astronomy article.  \nThe modern source selected on retry was Wikipedia’s [“Cultural astronomy”](https://en.wikipedia.org/w/index.php?oldid=1298337464), about astronomy’s roles in cultures rather than general astronomy; the initial query instead returned the unrelated “Duplicate content.”  \nBoth searches were partial: query and document embedding stages failed with HTTP 503, leaving lexical matching only, so these mismatched sources do not support a historical–modern comparison of astronomy."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 8061,
+      "completion_tokens": 271,
+      "total_tokens": 18989,
+      "prompt_tokens_details": {
+        "cached_tokens": 8052
+      }
+    }
+  },
+  "transcript_session_id": "b772ca01-f9cd-4976-9451-2ed10875c0eb",
+  "events": [
+    {
+      "seq": 5,
+      "role": "assistant",
+      "model": "gpt-6-astra",
+      "tool_calls": [
+        {
+          "type": "toolCall",
+          "id": "call_7htEuqTZnMRHklXhsb1t4z3n|fc_000fd151261a6e15016ad4f8017e048195bfd97cdf99c2ebf9",
+          "name": "tomi_evidence_search",
+          "arguments": {
+            "language": "en",
+            "query": "astronomy: retrieve original historical Encyclopaedia Britannica astronomy article and modern Wikipedia Astronomy article; provide actual source titles, URLs, and retrieval stage availability or source mismatches"
+          }
+        }
+      ],
+      "is_error": false,
+      "content_sha256": "b40e38a7d7ff4eb18f0d62051fb38b43999b2293ccd9c6fbe87adcdf8d61d05a"
+    },
+    {
+      "seq": 6,
+      "role": "toolResult",
+      "tool_name": "tomi_evidence_search",
+      "tool_call_id": "call_7htEuqTZnMRHklXhsb1t4z3n|fc_000fd151261a6e15016ad4f8017e048195bfd97cdf99c2ebf9",
+      "tool_calls": [],
+      "is_error": false,
+      "content_sha256": "2a058f6f47c0d22faaeed675ffcea079f2cfa87ebdeebae90d3840d33e51e86b"
+    },
+    {
+      "seq": 8,
+      "role": "assistant",
+      "model": "gpt-6-astra",
+      "tool_calls": [
+        {
+          "type": "toolCall",
+          "id": "call_0e8MpTz6iLMSmH72WK3gSyPs|fc_0483e8efac11a20b016ad4f80f97b48190980fc116926dc29c",
+          "name": "tomi_evidence_search",
+          "arguments": {
+            "language": "en",
+            "query": "astronomy"
+          }
+        }
+      ],
+      "is_error": false,
+      "content_sha256": "91420e3e353d02cfb7ff04723338eb37e53d879ce5b05a28e6dcc5c75885f8f5"
+    },
+    {
+      "seq": 9,
+      "role": "toolResult",
+      "tool_name": "tomi_evidence_search",
+      "tool_call_id": "call_0e8MpTz6iLMSmH72WK3gSyPs|fc_0483e8efac11a20b016ad4f80f97b48190980fc116926dc29c",
+      "tool_calls": [],
+      "is_error": false,
+      "content_sha256": "a034e0ed38a53df551f1135a0c6665907497d698b4252f5bcca86b9b94d42f44"
+    },
+    {
+      "seq": 11,
+      "role": "assistant",
+      "model": "gpt-6-astra",
+      "tool_calls": [],
+      "is_error": false,
+      "content_sha256": "396dcb14449df460193b02d5513e37e80c219ad5d07f3dbe53a1e2b14d0d7871"
+    }
+  ],
+  "acquisition": {
+    "method": "az containerapp exec interactive /bin/sh on explicitly selected ready revision and replica; local HTTP request inside container; read-only SQLite transcript inspection",
+    "resource_group": "rg-tomi-202610181730",
+    "container_app": "tomi-ai-covenant"
+  }
+}

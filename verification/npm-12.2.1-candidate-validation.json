@@ -1,0 +1,17 @@
+{
+  "install": 0,
+  "clean_install": 0,
+  "build": 0,
+  "tests": 0,
+  "audit": 0,
+  "audit_counts": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "candidate_directory": "/var/folders/zb/6yrhsssj3tg5647b8fyhjs800000gn/T/tomi-covenant-npm-12-2-1-gqbspddr",
+  "method": "Independent temporary copy; exact npm override updated, regenerated lock, then clean npm ci, TypeScript, six tests and audit"
+}
