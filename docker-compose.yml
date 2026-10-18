@@ -1,0 +1,29 @@
+services:
+  covenant:
+    build: .
+    init: true
+    env_file: .env
+    environment:
+      TOMI_COVENANT_HOST: 0.0.0.0
+    ports:
+      - "127.0.0.1:${TOMI_COVENANT_PORT}:${TOMI_COVENANT_PORT}"
+    volumes:
+      - covenant-runtime:/app/runtime
+      - covenant-workspace:/app/workspace
+    read_only: true
+    tmpfs:
+      - /tmp:mode=1777,size=256m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    stop_grace_period: 15s
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:'+process.env.TOMI_COVENANT_PORT+'/ready').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 6s
+      start_period: 30s
+      retries: 3
+volumes:
+  covenant-runtime:
+  covenant-workspace:

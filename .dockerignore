@@ -1,0 +1,11 @@
+.git
+.env
+.env.*
+!.env.example
+node_modules
+runtime
+workspace
+dist
+verification
+*.log
+.DS_Store
